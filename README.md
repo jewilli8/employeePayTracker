@@ -6,3 +6,6 @@ This project empowers employers to track employee salaries. The user is prompted
 </p>
 ##Credits<p>
 Starter code from <a href="https://github.com/coding-boot-camp/urban-octo-telegram"> Urban-Otcto-telegram </a> </p>
+##Link <p>
+  Check it out <a href="https://jewilli8.github.io/employeePayTracker/index.html"> here </a>
+</p>
