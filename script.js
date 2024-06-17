@@ -52,13 +52,23 @@ const displayAverageSalary = function(employeesArray) {
   for (let employee of employeesArray){
     totalPayroll += parseInt(employee.salary)
   }
-  let averageSalary = totalPayroll / numEmployees;
+  let averageSalary = Math.round(totalPayroll / numEmployees);
   console.log(`The average employee salary between our ${numEmployees} employees is $${averageSalary}`);
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
+  //Selects and displays a random employee
+  
+  
+let randomNum = Math.floor(Math.random() * employeesArray.length);
+  
+  let randoEmployeeArray = employeesArray[randomNum];
+  let randoEmployee = randoEmployeeArray.firstName + " " + randoEmployeeArray.lastName;
+ 
+  console.log(`Congratulations to ${randoEmployee}, our random drawing winner!`)
+ 
+  
 }
 
 /*
@@ -126,4 +136,3 @@ const trackEmployeeData = function() {
 
 // Add event listener to 'Add Employees' button
 addEmployeesBtn.addEventListener('click', trackEmployeeData);
-displayAverageSalary();
